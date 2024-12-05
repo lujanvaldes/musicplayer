@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Playlist</title>
 
-<style>
-.Lista-cancion {
-    border: 1px solid gray;
-}
-
-
-</style>
-
-
+    <style>
+        .ListaCanciones {
+            border: 1px solid gray;
+            padding: 5px;
+        }
+    </style>
 </head>
+
 <body>
-    
-
-<h2>Playlist</h2>
-<div id="ListaCanciones" class="Lista">
-
-    <div class="Lista-cancion">Billie Jean</div>
-  
 
 
+    <h2>Playlist</h2>
+    <!-- estamos usando las clases para css y los ids para funcionalidad -->
+    <div id="ListaCanciones" class="Lista">
+
+        <!-- Muchas canciones van a estar dentro de esta caja
+    <div class="Lista-cancion">Billie Jean</div> -->
+
+    </div>
+
+    <h3>Canción reproduciendose</h3>
+    <div id="playingSong">
+        <!-- informacion de la cancion que se este reproduciendo -->
+    </div>
 
 
-</div>
+    <!-- botones -->
+    <button id="btnTema3">Play song 3</button>
+
+    <button id="btnAnt">Anterior</button>
+    <button id="btnPlay">Play</button>
+    <button id="btnPausa">Pausa</button>
+    <button id="btnSig">Siguiente</button>
 
 
-<script src="script.js">
-</script>
+    <script src="./js/script.js"></script>
 
 </body>
+
 </html>
