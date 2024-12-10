@@ -7,6 +7,7 @@ const lista_canciones = [
         artista: "The Neighbourhood",
         url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
         titulo: "Sweater Weather"
+        // img: !! 
     }, {
         artista: "Post Malone",
         url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
@@ -88,11 +89,17 @@ btnAnt.addEventListener("click", () => {
 function imprimirReproduciendo() {
     const song = lista_canciones[idCancionActual].titulo;
     const artist = lista_canciones[idCancionActual].artista;
+
+    //variable para añadir imagen
+    //const img = lista_canciones[idCancionActual].img;
+
+
     console.log("Artista:" + artist + " - canción: " + song);
 
     divPlayingSong.innerHTML = `<div>idCancionActual: ${idCancionActual} </br>
         canción: ${song} <br/>
-        artista: ${artist} </div>`;
+        artista: ${artist} 
+       </div>`;
     console.log(audioPlayer);
     audioPlayer.src = lista_canciones[idCancionActual].url;
 }
@@ -133,9 +140,11 @@ lista_canciones.forEach((cancion, idx) => {
 
     const song = cancion.titulo;
     const artist = cancion.artista;
+    //const imgUrl = cancion.img;
 
     divListaCanciones.innerHTML += `<div id="song_${idx}" class="Lista-cancion">
                             ${idx}. ${song} - ${artist} 
+            
                             </div>`;
 });
 
