@@ -1,11 +1,4 @@
 # musicplayer actividad 8
-HTML song (para buscar y agregar la cancion de verdad)
-
-link de la pagina para sacar temas example
-enlace de las canciones que iban en audio HTML
-https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3
-
-
 
 
 1. Crear un array con 5 canciones, recorrer el array y mostrar en consola cada canción. (consola)

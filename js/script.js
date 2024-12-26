@@ -5,26 +5,31 @@
 const lista_canciones = [
     {
         artista: "The Neighbourhood",
-        url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-        titulo: "Sweater Weather"
-        // img: !! 
+        url: "https://on.soundcloud.com/MGJK7SGBVBXgxj1b7",
+        titulo: "Sweater Weather",
+        img: "../img/cancion0.jpg"
     }, {
         artista: "Post Malone",
         url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
-        titulo: "Circles"
+        titulo: "Circles",
+        img: "../img/cancion1.jpg"
     }, {
         artista: "The Neighbourhood",
         url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
-        titulo: "Afraid"
+        titulo: "Afraid",
+        img: "../img/cancion2.jpg"
     }, {
         artista: "Post Malone",
         url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
-        titulo: "Better Now"
+        titulo: "Better Now",
+        img: "../img/cancion3.jpg"
     }, {
         artista: "The Neighbourhood",
         url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3",
-        titulo: "Softcore"
+        titulo: "Softcore",
+        img: "../img/cancion4.jpg"
     }];
+
 
 //primer elemento de la lista, cuarta canción
 lista_canciones[0].artista;
@@ -96,8 +101,9 @@ function imprimirReproduciendo() {
 
     console.log("Artista:" + artist + " - canción: " + song);
 
-    divPlayingSong.innerHTML = `<div>idCancionActual: ${idCancionActual} </br>
-        canción: ${song} <br/>
+    divPlayingSong.innerHTML = `
+    
+        ${song} <br/>
         artista: ${artist} 
        </div>`;
     console.log(audioPlayer);
@@ -142,10 +148,10 @@ lista_canciones.forEach((cancion, idx) => {
     const artist = cancion.artista;
     //const imgUrl = cancion.img;
 
-    divListaCanciones.innerHTML += `<div id="song_${idx}" class="Lista-cancion">
-                            ${idx}. ${song} - ${artist} 
-            
-                            </div>`;
+    divListaCanciones.innerHTML += `
+    <div id="song_${idx}" class="Lista-cancion">
+    ${idx}. ${song} - ${artist} 
+    </div>`;
 });
 
 
