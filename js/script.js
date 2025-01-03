@@ -59,7 +59,7 @@ const btnTema = document.querySelector("#btnTema3");
 
 //Audio
 const divListaCanciones = document.getElementById("ListaCanciones");
-const divAudioPlayer = document.querySelector("audio");
+const divAudioPlayer = document.querySelector("#audioPlayer");
 const divPlayingSong = document.getElementById("playingSong");
 
 let idCancionActual = 0;
