@@ -5,27 +5,32 @@
 const lista_canciones = [
     {
         artista: "The Neighbourhood",
-        url: "https://on.soundcloud.com/MGJK7SGBVBXgxj1b7",
+        url: "./audio/Sweater Weather.mp3",
         titulo: "Sweater Weather",
+        //https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
         img: "../img/cancion0.jpg"
     }, {
         artista: "Post Malone",
-        url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+        url: "./audio/Circles.mp3",
+        //url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
         titulo: "Circles",
         img: "../img/cancion1.jpg"
     }, {
         artista: "The Neighbourhood",
-        url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
+        url: "./audio/Afraid.mp3",
+        // url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
         titulo: "Afraid",
         img: "../img/cancion2.jpg"
     }, {
         artista: "Post Malone",
-        url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
+        url: "./audio/Better Now.mp3",
+        //url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
         titulo: "Better Now",
         img: "../img/cancion3.jpg"
     }, {
         artista: "The Neighbourhood",
-        url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3",
+        url: "./audio/Softcore.mp3",
+        //url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3",
         titulo: "Softcore",
         img: "../img/cancion4.jpg"
     }];
@@ -43,26 +48,27 @@ console.log(lista_canciones[3].titulo)//Better Now
 // _________________________________________________________ //
 
 
-const divListaCanciones = document.getElementById("ListaCanciones");
-const audioPlayer = document.querySelector("audio");
-
-
-let idCancionActual = 0;
-
-
-const btnTema = document.querySelector("#btnTema3");
-
-
-
-const divsCanciones = document.querySelectorAll(".Lista-cancion");
-const divPlayingSong = document.getElementById("playingSong");
-
-
-
+//Botones
 const btnSig = document.querySelector("#btnSig");
 const btnAnt = document.querySelector("#btnAnt");
 const btnPlay = document.querySelector("#btnPlay");
 const btnPausa = document.querySelector("#btnPausa");
+
+const btnTema = document.querySelector("#btnTema3");
+
+
+//Audio
+const divListaCanciones = document.getElementById("ListaCanciones");
+const divAudioPlayer = document.querySelector("audio");
+const divPlayingSong = document.getElementById("playingSong");
+
+let idCancionActual = 0;
+
+
+// LO QUE MODIFIQUE: const divsCanciones = document.querySelectorAll(".Lista_cancion");
+
+
+
 
 
 btnSig.addEventListener("click", () => {
